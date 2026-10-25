@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [status, setStatus] = useState('')
 
   const handleChange = (e) => {
@@ -20,8 +20,7 @@ export default function Contact() {
         <h2 className="section-title">Contact Me</h2>
         <div className="contact-details">
           <p><strong>Email:</strong> my.email@example.com</p>
-          <p><strong>Phone:</strong> (555) 555-5555</p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/matthew-li-b88072383" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
         </div>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-row">
@@ -45,18 +44,6 @@ export default function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 required
-              />
-            </label>
-          </div>
-          <div className="form-row">
-            <label>
-              Phone
-              <input
-                type="tel"
-                name="phone"
-                placeholder="(555) 555-5555"
-                value={form.phone}
-                onChange={handleChange}
               />
             </label>
           </div>
